@@ -4,8 +4,8 @@ import {
   GrammyError,
   HttpError,
 } from "https://deno.land/x/grammy@v1.25.1/mod.ts";
-import works from "./data/works.json" with { "type": "json" }
-import { getWorksDescription } from "./scripts/getWorks.ts";
+import worksObj from "./data/works.json" with { "type": "json" }
+import { getWorksDescription } from "./scripts/getWorksDescription.ts";
 
 const env = await load();
 const botKey = env["BOT_API_KEY"];
@@ -38,7 +38,7 @@ bot.command("start", (ctx) => {
 });
 
 bot.command("works", (ctx) => {
-  ctx.reply(getWorksDescription(works.works), {
+  ctx.reply(getWorksDescription(worksObj.works), {
     parse_mode: "MarkdownV2",
   });
 });
