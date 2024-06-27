@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": {
+      "cmd": "deno run --allow-net --allow-env --allow-read bot.ts"
+    }
+  },
+  "watch": true,
+  "unstable": true
+}
