@@ -8,7 +8,7 @@ import {
 import worksObj from "./data/works.json" with { "type": "json" }; 
 import topics from "./data/quotes.json" with { "type": "json" };
 import { getWorksDescription } from "./scripts/getWorksDescription.ts";
-import { IQuote, getRandomQuoteByTopic } from "./scripts/getRandomQuoteByTopic.ts";
+import { getRandomQuoteByTopic } from "./scripts/getRandomQuoteByTopic.ts";
 
 const env = await load();
 const botKey = env["BOT_API_KEY"];

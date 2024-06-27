@@ -4,7 +4,7 @@ export interface IQuote {
   quoteText: string;
 }
 
-export function getRandomQuoteByTopic(quotes: Array<IQuote>): object {
+export function getRandomQuoteByTopic(quotes: Array<IQuote>): IQuote {
   const randomIndex = Math.round(Math.random() * quotes.length);
   return quotes[randomIndex];
 }
