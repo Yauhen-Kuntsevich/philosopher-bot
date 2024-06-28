@@ -1,7 +1,8 @@
-export interface IQuote {
+interface IQuote {
   id: number;
   author: string;
-  quoteText: string;
+  text: string;
+  interpretation?: string;
 }
 
 export function getRandomQuoteByTopic(quotes: Array<IQuote>): IQuote {

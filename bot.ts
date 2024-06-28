@@ -42,7 +42,7 @@ bot.command("start", async (ctx) => {
 
 bot.command("topic", async (ctx) => {
   const quote = getRandomQuoteByTopic(topics["зло"]);
-  await ctx.reply(`${quote.quoteText}`);
+  await ctx.reply(`${quote.text}`);
 })
 
 bot.command("works", (ctx) => {
